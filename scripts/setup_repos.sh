@@ -118,6 +118,6 @@ NEXT — push static demo to PUBLIC demo:
   bash "$PULSE/scripts/publish_demo.sh"
 
 Pages URL (after demo deploy):
-  https://${OWNER,,}.github.io/$DEMO_REPO/
+  https://$(echo "$OWNER" | tr '[:upper:]' '[:lower:]').github.io/$DEMO_REPO/
 
 EOF
